@@ -26,5 +26,5 @@ jobs:
       working-directory: ${{env.working-directory}}
 
     - name: Test
-      run: go test -v ./.../tests
+      run: go test -v ./tests
       working-directory: ${{env.working-directory}}
