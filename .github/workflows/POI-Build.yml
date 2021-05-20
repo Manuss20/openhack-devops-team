@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./apis/poi/web
+      working-directory: ./apis/poi
 
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,10 @@ jobs:
         dotnet-version: 2.1.x
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: ${{env.working-directory}}
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ${{env.working-directory}}
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      working-directory: ${{env.working-directory}}
