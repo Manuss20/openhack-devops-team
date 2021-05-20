@@ -24,6 +24,8 @@ namespace poi
             return CreateWebHostBuilder(args).Build();
         }
 
+        HELLO WORD FAIL!!!
+
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) {
             //used to read env variables for host/port
             var configuration = new ConfigurationBuilder()
