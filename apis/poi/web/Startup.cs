@@ -46,7 +46,9 @@ namespace poi
                 c.SwaggerDoc("docs", new Info { Title = "Points Of Interest(POI) API", Version = "v1" });
             });
         }
-
+        
+        HELLO WORLD FAIL!!!
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
